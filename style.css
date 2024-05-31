@@ -1,0 +1,538 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;    
+    list-style-type: none;
+}
+a {
+    color: #000;    
+}
+body {
+    font-family: "Ubuntu", sans-serif;
+    
+}
+.tripadvisor-container {
+    margin: 0 150PX;
+}
+/* Nav bar */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin: 10px 0;
+}
+.mob-nav-wrapper {
+    display: none;
+}
+.nav-container::after{
+    
+    border-bottom: 1px solid #000;
+}
+.nav-Tilte img {
+    width: 200px;
+    height: 50px;
+}
+.nav-center ul {
+    display: flex;
+    gap: 30px;
+}
+.nav-center ul li a {
+    background-color: transparent;
+    font-size: 16px;
+    height: 30px;
+    padding: 10px;
+}
+.nav-center ul li a:hover {
+    background-color: #e6e2e2;
+    border-radius: 30px;
+    padding: 10px;
+    /* width: 100px; */
+    height: 30px;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.world-wrapper {
+    display: flex;
+    align-items: center;
+}
+.world-wrapper span {
+    border-left: 1PX solid #adacac;
+    padding: 2PX;
+}
+.world-wrapper .fa-globe {
+    padding-right:5px ;
+}
+.sigin-btn {
+    width: 80px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+}
+
+/* search wrapper */
+
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.search-wrapper h1 {
+    text-align: center;
+}
+.search-wrapper ul {
+    display: flex;
+    margin: 40px 0;
+    gap: 20px;
+}
+.search-wrapper ul li a {
+    padding-bottom: 5px;
+}
+.search-wrapper ul li a:hover {
+    border-bottom: 2px solid #000;
+}
+.search-wrapper ul li:first-child {
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+}
+.search-input {
+    padding: 10px;
+    border: 2px solid #c9c3c3;
+    box-shadow: #969494;
+    border-radius: 50px;
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-input input {
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    background-color: transparent;
+    outline: none;
+}
+.search-btn {
+    width: 100px;
+    height: 40px;
+    background-color: #26d5a1;
+    color: #000;
+    border-radius: 50px;
+    border: none;
+}
+.tips-wrapper {
+    background: rgb(197,136,221);
+    background: linear-gradient(90deg, rgba(197,136,221,0.5830926120448179) 0%, rgba(194,139,221,0.8632046568627451) 35%, 
+    rgba(219,161,238,0.5914959733893557) 100%);
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+    margin: 50px 0;
+    padding: 50px 0 0 0;
+    width: 100%;
+    height: 70%;
+
+}
+.mob-tips-wrapper {
+    display: none;
+}
+.tips-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+.tips-wrapper .tips-content {
+    position: absolute;
+    margin: 50px;
+    
+}
+
+.tips-content .ai-text {
+    font-size: 14px;
+    color: #333030;
+    padding-left: 10px;
+}
+ .tips-content .box {
+    background-color: #fff;
+    width: 20px;
+    height: 10px;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 4px;
+}
+.tips-content h1 {
+    font-size: 50px;
+    width: 280px;
+    font-weight: bold;
+    color: #1e073c;
+    padding: 10px;
+}
+.tips-content p {
+    font-size: 20px;
+    width: 320px;
+    font-weight: bold;
+    color: #1e073c;
+    padding: 10px;
+}
+ .trip-button {
+    background-color: #1e073c;
+    height: 50px;
+    padding: 20px;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    width: 200px;
+    margin-top: 10px;
+}
+/* award-wrapper */
+/* .award-wrapper {
+
+} */
+.award-wrapper h1 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+.award-wrapper p {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.card-detail-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.card-detail {
+    margin: 10px;
+    position: relative;
+    flex-grow: 1;
+    flex-basis: 20%;
+}
+.card-detail:first-child {
+    margin-left: 0;
+}
+.card-detail:last-child{
+    margin-right: 0;
+}
+.card-detail img {
+    width: 230px;
+    height: 300px;
+    border-radius: 10px;
+    opacity: 1;
+}
+.card-detail img:hover {
+    opacity: .5;
+}
+.card-detail span {
+    position: absolute;
+    bottom: 10px;
+    z-index: 1;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    left: 0;
+    padding: 10px
+}
+
+.experience-wrapper h1 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+.experience-wrapper p {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.card-list-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.card-list {
+    flex-basis: 18%;
+    flex-grow: 1;
+    margin: 10px;
+    position: relative;
+}
+.card-list:first-child {
+    margin-left: 0;
+}
+.card-list img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    opacity: 1.0;
+}
+.card-list img:hover {
+    opacity: .5;
+}
+.card-list h3 {
+    padding: 10px 0;
+}
+.card-list .fa-heart {
+    border: 1px solid #fff;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    margin: 10px;
+    background: #fff;
+    font-size: 20px;
+}
+/* culinary-wrapper */
+.culinary-wrapper h1 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+.culinary-wrapper p {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+/* winner-wrapper */
+.winner-wrapper {
+    background: rgb(244,242,182);
+    background: linear-gradient(90deg, rgba(244,242,182,1) 0%, rgba(244,242,182,0.33099177170868344) 35%, 
+    rgba(244,242,182,1) 100%);
+    display: flex;
+    position: relative;
+    margin: 50px 0;
+    padding: 50px 0 0 0;
+    width: 100%;
+}
+
+.winner-wrapper img {
+    width: 46%;
+    height: 100%;
+    position: absolute;
+    right: 273px;
+    top: 0;
+}
+.winner-content {
+    margin: 100px;
+    position: relative;
+}
+.winner-content img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    top: -90px;
+}
+.winner-content h1 {
+    font-size: 50px;
+    width: 422px;
+    font-weight: bold;
+    color: #000;
+    padding: 10px;
+}
+.winner-content p {
+    font-size: 20px;
+    width: 320px;
+    font-weight: bold;
+    color: #000;
+    padding: 10px;
+}
+.winner-button {
+    background-color: #000;
+    height: 50px;
+    padding: 20px;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    width: 200px;
+    margin-top: 10px;
+}
+/* footer wrapper */
+.footer-wrapper {
+    margin: 50px 0 0 0;
+    background-color: #f6ead4;
+}
+.footer-list-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+.footer-list-left {
+    display: flex;
+    gap: 10px;
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-list h3,span {
+    font-weight: 300;
+    color: #333030;
+}
+.footer-list,.footer-list-right span {
+    font-size: 14px;
+}
+.footer-list-right {
+    display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+.footer-list-right h3,span{
+    font-weight: 300;
+    color: #333030;
+}
+.footer-copy-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+.footer-copy-section {
+    display: flex;
+    flex-direction: row;
+}
+.footer-logo {
+    padding: 10px 0;
+}
+.footer-logo img {
+    width: 50px;
+    height: 50px;
+}
+.footer-copy-left {
+    padding: 15px 10px 0 10px;
+    margin-right: 25px;
+}
+
+.footer-copy-left ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    padding: 5px 0;
+}
+.footer-copy-left li {
+    display: flex;
+}
+.footer-copy-left li a {
+    border-bottom: 2px solid #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+.footer-copy-left span {
+    font-size: 10px;
+    font-weight: 300;
+}
+.footer-copy-left p {
+    font-size: 12px;
+}
+.footer-copy-right {
+    display: flex;
+    flex-direction: column;
+
+}
+.social-log {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+.world-dropdown {
+    display: flex;
+    margin-bottom: 20px;
+}
+.select-dropdown {
+    padding: 5px;
+    border: 2px solid #c9c3c3;
+    border-radius: 10px;
+    width: 200px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #fff;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.select-dropdown select {
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    background-color: transparent;
+    outline: none;
+}
+
+/* Mobile View and Tablet view media query */
+@media screen and (max-width:800px) {
+    body {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:600px) {
+    body {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .tripadvisor-container {
+        margin: 0 30px;
+    }
+    .nav-container {
+        display: none;
+    }
+    .mob-nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        z-index: 1;
+    }
+    .nav-Tilte img{
+        width: 100px;
+        height: 30px;
+    }
+    .profile .fa-user {
+        border: 1px solid #000;
+        border-radius: 50%;
+        padding: 3px;
+    }
+    .search-wrapper ul {
+        gap:10px
+    }
+    .tips-wrapper {
+        display: none;
+    }
+    .mob-tips-wrapper {
+        background: rgb(197,136,221);
+        background: linear-gradient(90deg, rgba(197,136,221,0.5830926120448179) 0%, rgba(194,139,221,0.8632046568627451) 35%, 
+        rgba(219,161,238,0.5914959733893557) 100%);
+        border-radius: 20px;
+        display: flex;
+        height:70%;
+        position: relative;
+        margin-top: 50px;
+      }
+    .mob-tips-wrapper img {
+        width: 50%;
+        height: 40%;
+        position: absolute;
+        bottom: 0;
+        left: 91px;   
+    }
+    .tips-content {
+        margin: 50px;
+        text-align: center;
+    }
+    .tips-content h1 p{
+        width: 0;
+    }
+}
